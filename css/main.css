@@ -1,0 +1,194 @@
+@charset "UTF-8";/* reset */
+* { margin: 0; padding: 0; font-family: 'GangwonState'; } 
+
+ul,
+li { margin: 0; padding: 0; list-style: none; } 
+
+a { text-decoration: none; } 
+
+/* font */
+@font-face { font-family: 'GangwonState'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/GangwonState.woff2') format('woff2'); font-weight: normal; font-style: normal; } 
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300; 400; 500&display=swap');.notosanskr * { font-family: 'Noto Sans KR', sans-serif; } 
+
+#wrap { width: 100%; position: relative; background: linear-gradient(180deg, rgba(228, 228, 228, 0.50) 0.25%, rgba(255, 255, 255, 0.50) 56.07%, rgba(221, 221, 221, 0.45) 99.75%); background: url(../images/Texture.png)no-repeat center/cover; } 
+
+/* ============header===============*/
+#wrap header { width: 100%; height: 1080px; } 
+
+#wrap header .headerinner { width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; } 
+
+#wrap header .headerinner h1 img { width: 82px; height: 40px; display: block; margin: 25px 0; } 
+
+/* menu */
+#wrap header .mainmenu { width:800px; height: 90px; float: left; position: relative; /**/
+ font-size: 30px; } 
+#wrap header .mainmenu nav { width: 100%; position: absolute; left: 0; top: 15px; z-index: 999; text-align: center; } /**/
+#wrap header .mainmenu nav ul li { float: left; width: 25%; } /**/
+#wrap header .mainmenu nav ul li a { display: block; height: 70px; line-height: 70px; color: #000; } 
+#wrap header .mainmenu nav ul li a:hover { color: #F5FF00; text-decoration: underline; } 
+/* subMenu */
+#wrap header .mainmenu nav ul li ul { display: none; font-size: 20px; } 
+#wrap header .mainmenu nav ul li ul li { width: 100%; } /**/
+/* subMenu - bg */
+#wrap header .background { width: 100%; height: 500px; z-index: 9; /**/
+ border: 0px solid #FFF; background: linear-gradient(180deg, rgba(169, 169, 169, 0.3), rgba(169, 169, 169, 0.3)); backdrop-filter: blur(15px); display: none; position: absolute; top: 0px; left: 0; } /**/
+
+#wrap header .headerinner .global { width: 50px; height: 50px; display: block; margin: 30px 0; } 
+
+/* ==============main================ */
+#wrap main { width: 100%; height: 990px; position: absolute; top: 0px; /* background:url(../images/bg.png)no-repeat center/cover; height: 990px; */
+ }
+#wrap main .visual { width: 100%; /* height: 1080px; */
+ display: block; overflow: hidden;} 
+#wrap main .visual .soundwave { background:url(../images/bggif.gif)no-repeat center/cover; width: 100%; position: absolute; top: 0; height: 1080px; opacity: 0.3; } 
+
+/* #wrap main .visual .slide { width: 100%; height: 90px; position: absolute; bottom: 0; display: block; background: rgba(255, 255, 255, 0.20); backdrop-filter: blur(25px); } */
+/* *:before,
+*:after { margin: 0; padding: 0; box-sizing: border-box; } */
+
+/* glow */
+.glow1 {opacity: .3; width: 30vw; height: 30vw; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 2rem; color: white; font-family: roboto; font-weight: bold;position:relative;
+    position: absolute;
+    top: 350px; left: 750px; } 
+
+.glow1::before, .glow1::after
+ {
+position: absolute;content : "";top: -5%;left: -5%;height:110%;width:110%;border-radius:50%;opacity:0.5;filter: blur(60px); } 
+
+.glow1::after
+ {
+ background-color:#F5FF00; z-index: -1;animation : backglow2 15s ease infinite; } 
+
+.glow1::before{
+ background-color:#000000; z-index: -2;animation : backglow1 15s ease infinite; } 
+
+
+@keyframes backglow1
+ {
+
+0%
+ {
+ transform: translate(10%, 10%) scale(1); opacity:0.5; } 
+
+ 25%
+ {
+ transform: translate(-10%, 10%) scale(0.8); opacity:0.5; } 
+
+ 50%
+ {
+ transform: translate(-10%, -10%) scale(1.2); opacity:0.3; } 
+
+ 75%
+ {
+ transform: translate(10%, -10%) scale(1); opacity:0.2; } 
+
+ 100%
+ {
+ transform: translate(10%, 10%) scale(1); opacity:0.5; } 
+
+}
+
+
+@keyframes backglow2
+ {
+
+0%
+ {
+ transform: translate(-10%, -10%) scale(1); opacity:0.5; } 
+
+ 25%
+ {
+ transform: translate(10%, -10%) scale(0.8); opacity:0.5; } 
+
+ 50%
+ {
+ transform: translate(10%, 10%) scale(1.2); opacity:0.5; } 
+
+ 75%
+ {
+ transform: translate(-10%, 10%) scale(1.1); opacity:0.2; } 
+
+ 100%
+ {
+ transform: translate(-10%, -10%) scale(1); opacity:0.5; } 
+
+}
+
+.textvisual { position: absolute; top: 250px; left: 500px; font-size: 200px; line-height: 200px; overflow: hidden; width: 1400px; height: 100%; } 
+
+.container { position: relative; height: 200px; overflow: hidden; outline: 2px transparent; } 
+
+ul.menu { position: absolute; top: 0px; left: 0px; list-style: none; white-space: nowrap; } 
+
+.menu { color: transparent; -webkit-text-stroke: 2px black; } 
+
+/* =============section============= */
+/* ==LABELS== */
+.LABELS { width: 100%; background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(100, 100, 98, 0.00) 100%); overflow: hidden; } 
+.LABELS .title { display: block; margin-top:90px; } 
+.LABELS .title h2 { font-size: 70px; padding-bottom:10px; } 
+.LABELS .title p { font-size: 35px; padding-bottom:60px; } 
+
+.box { width: 1400px; margin: 0 auto; position: relative; padding-bottom:120px; } 
+
+.box .swiper { width: 100%; height: 642px; } 
+.box .swiper-slide { text-align: center; display: flex; justify-content: center; align-items: center; width: 655px; height: 642px; object-fit: cover; /* 이미지, 비디오 - 부모에 맞게 조절 - 완전히 채워짐*/
+ opacity: 0.3; transform: scale(0.7); transition: 1.3s; } 
+
+
+/* 커지는 중앙 박스 */
+.box .swiper-slide-active { opacity: 1; transform:scale(1); } 
+
+
+
+/* ==DNA== */
+.inner { width: 1400px; margin: 0 auto; } 
+.DNA { width: 100%; background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(100, 100, 98, 0.00) 100%); box-sizing: border-box; } 
+.DNA .title { display: block; padding-top: 90px; } 
+.DNA .title h2 { font-size: 70px; padding-bottom:60px; } 
+
+.DNA .dnaTitle { display: block; width: 1400px; height: 250px; padding-bottom:50px; background: url(../images/dna.png)no-repeat; width: 1402px; height: 218px; } 
+.DNA .dnaTitle ul { display: flex; } 
+.DNA .dnaTitle ul li { display: block; width: 466px; height: 105px; text-align: center; padding: 50px; } 
+.DNA .dnaTitle ul li b { background: linear-gradient(180deg, #F5FF00 0%, rgba(255, 255, 255, 0.5) 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1.5px #000; font-size: 60px; box-sizing: border-box; } 
+.DNA .dnaTitle ul li p { font-family: 'Noto Sans KR', sans-serif; font-size: 30px;} 
+
+.DNA .dnaText { display: block; width: 1400px; height: 430px; padding-bottom:120px; } 
+.DNA .dnaText ul { display: flex; /* border-radius: 0px 0px 0px 50px; background: linear-gradient(0deg, rgba(249, 255, 95, 0.50) -1.83%, rgba(217, 217, 217, 0.00) 85.21%); */
+ background: url(../images/Group\ 4.png)no-repeat center/cover; width: 1400px; height: 436px; position: relative; } 
+
+.DNA .dnaText ul li { display: block; width: 466px; height: 345px; text-align: center; padding: 30px 50px; } 
+
+.DNA .dnaText ul li span { font-size: 25px; font-family: 'Noto Sans KR', sans-serif; color: #fff; } 
+ 
+.DNA .dnaText ul li p { font-size: 20px; font-family: 'Noto Sans KR', sans-serif; padding-top: 90px; text-align: justify;} 
+
+.DNA .dnaText ul li p b{font-family: 'Noto Sans KR', sans-serif; font-weight: 500;}
+
+/* ==AUDITION== */
+.AUDITION { width: 100%; background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(100, 100, 98, 0.00) 100%); } 
+.AUDITION .title { display: block; padding-top: 90px; } 
+.AUDITION .title h2 { font-size: 70px; padding-bottom:60px; } 
+.AUDITION .apply { display: block; width: 1400px; height: 495px; margin-bottom:120px; display: flex; justify-content: space-between; } 
+.AUDITION .apply .youtube { width: 818px; height: 495px; } 
+.AUDITION .apply .form { width: 515px; height: 495px; display: flex; flex-direction:column; } 
+
+input[type="text"] { width:100%; height:80px; background: none; border:0; border-bottom:3px solid #ffffff; padding:0 20px; margin-bottom: 50px; box-sizing:border-box; -webkit-box-sizing:border-box; font-size:30px; color:#000; font-weight: lighter; } 
+
+.AUDITION .apply .form button { font-size: 50px; font-weight: 400; line-height: 88px; letter-spacing: 20px; border:0; width:100%; border-radius: 0px 50px; background: linear-gradient(87deg, #F5FF00 19.65%, rgba(64, 64, 64, 0.5) 100%); width: 514px; height: 122px; cursor: pointer; } 
+
+/* ==============footer============ */
+footer { width: 100%; height: 130px; background-color: #000; padding:50px 0; } 
+footer .inner { width: 1400px; margin: 0 auto; position: relative; display: flex; } 
+
+footer .inner .b_logo img { width: 265px; height: 70px; padding-top: 20px; } 
+
+footer .inner .info { color: #fff; margin-left: 25px; } 
+footer .inner .info p,
+footer .inner .info b { font-family: 'Noto Sans KR', sans-serif; font-weight: 100; } 
+
+
+footer .inner .site { position: absolute; right: 0; } 
+footer .inner .site .sns ul li { float: left; padding-left: 20px; padding-bottom: 15px; } 
+footer .inner .site select { background: none; border:0; border-bottom: 1px solid #fff; color: #E7E7E7; width: 200px; font-family: 'Noto Sans KR', sans-serif; font-size: 18px; position: absolute; right: 0; top: 70px; } 
+footer .inner .site select option { background: none; color: #000; } 
